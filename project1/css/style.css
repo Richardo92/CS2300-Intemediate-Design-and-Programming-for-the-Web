@@ -1,0 +1,172 @@
+/* Initialize all elements to zero margin and padding 
+ * This makes it easier to calculate our positioning */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.board {
+  /* Set the size of the box */
+  width: 1600px;
+  height: 150px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin-bottom: 10px;
+  margin-top: 15px;
+  background: url('../img/board.jpg') center center;
+  background-size: cover;
+}
+
+div.aboutMe {
+  /* Set the size of the box */
+  width: 650px;
+  height: 300px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin: 20px 30px;
+  margin-left: 60px;
+  background: url('../img/aboutMe.jpg');
+  background-size: 115% auto;
+  background-position: 50% 25%;
+  border: solid #FAEBD7 4px;
+}
+
+/* Only display overlay when box is hovered */
+div.aboutMe:hover div.overlay {
+  /* Set to visible */
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+  border: solid #FAEBD7 4px;
+}
+
+div.resume {
+  /* Set the size of the box */
+  width: 650px;
+  height: 300px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin: 20px 30px;
+  background: url('../img/resume.jpg');
+  background-size: 100% auto;
+
+  border: solid #FAEBD7 4px;
+}
+
+/* Only display overlay when box is hovered */
+div.resume:hover div.overlay {
+  /* Set to visible */
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+
+
+div.experience {
+  /* Set the size of the box */
+  width: 650px;
+  height: 300px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin: 10px 30px;
+  margin-left: 60px;
+  background: url('../img/experience.jpg');
+  background-size: 115% auto;
+  background-position: 50% 25%;
+  border: solid #FAEBD7 4px;
+}
+
+/* Only display overlay when box is hovered */
+div.experience:hover div.overlay {
+  /* Set to visible */
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+
+div.contact {
+  /* Set the size of the box */
+  width: 650px;
+  height: 300px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin: 10px 30px;
+
+  background: url('../img/contact.jpg');
+  background-size: 115% auto;
+  background-position: 50% 25%;
+  border: solid #FAEBD7 4px;
+}
+
+/* Only display overlay when box is hovered */
+div.contact:hover div.overlay {
+  /* Set to visible */
+  display: block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+
+
+/* ===================================== */
+/* ======== FULL SIZE OVERLAY ========== */
+/* ===================================== */
+div.overlay {
+  /* Position the overlay absolutely in
+   * the top-left corner of the box */
+  position: absolute;
+  
+  /* Set the size to match the box */
+  width: 650px;
+  height: 300px;
+  
+  /* Initially invisible */
+  display: none;
+  visibility: hidden;
+  
+  /* Increase contrast between image and text */
+  background-color: rgba(0,0,0,0.5);
+  
+  /* Format the text */
+  color: rgba(255,255,255,1);
+  font-size: 4em;
+}
+
+/* Center the paragraph in the overlay */
+div.overlay p {
+  margin-top: 25%;
+  text-align: center;
+}
+
+.footer{
+    background-color: #AfAfAf;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
