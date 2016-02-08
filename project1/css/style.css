@@ -21,7 +21,8 @@ div.board {
   background: url('../img/board.jpg') center center;
   background-size: cover;
 }
-
+/* The code for the effect of rollover is cited from the sample css file on piazaa */
+/* https://docs.google.com/document/d/1jSN2JjbYG5P3Sf8dyHfy1jy3pQyacpx0FXAjMQXE4-o/edit#heading=h.e6zy5br91i47 */
 div.aboutMe {
   /* Set the size of the box */
   width: 650px;
@@ -35,6 +36,7 @@ div.aboutMe {
   /* Put some space between boxes */
   margin: 20px 30px;
   margin-left: 60px;
+  /* This image is taken by mysely */
   background: url('../img/aboutMe.jpg');
   background-size: 115% auto;
   background-position: 50% 25%;
