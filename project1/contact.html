@@ -3,10 +3,6 @@
 	<head>
 		<title>Contact Me</title>
 		<link rel="stylesheet" href="css/style.css"/>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-    	<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
-    	<link rel="stylesheet" href="css/font-awesome.min.css" >
-    	<link rel="stylesheet" href="css/bootstrap-social.css" >
 	</head>	
 
 	<body>
@@ -14,137 +10,92 @@
 
     	 </div>
 
-    	 <div class="row">
-            <div class="col-xs-12 col-sm-12">
-               <ul class="breadcrumb">
-                   <li><a href="index.html">Home</a></li>
-                   <li class="active">Contact Me</li>
-               </ul>
-            </div>
-            <div class="col-xs-offset-2">
-               <h3>Contact Me</h3>
-               <hr>
-            </div>
+         <div class="horizontalLine">
+            <ul>
+                <div class="home">
+                    <span><li><a href="index.html">Home</a></li></span>
+                    <span><li>/ Contact Me</li></a></li></span>
+                </div>
+            </ul>
          </div>
+         <div>
+          <form method="post" role="form" id="response" action="contact.php">
+            <div class="name">
+                <span style="font:status-bar; font-size:20px; margin-left:42px">First name</span>
+                <span style="margin-left:50px">
+                    <input type="text" name="firstname" placeholder="Enter First Name">
+                </span><br><br>
 
-	<div class="row row-content">
-            <div class="col-xs-12 col-sm-offset-1">
-                <form class="form-horizontal" role="form" Method="POST" action="contact.php">
-                    <div class="form-group">
-                        <label for="firstname" class="col-sm-2 control-label">First Name</label>              
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastname" class="col-sm-2 control-label">Last Name</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="telnum" class="col-xs-12 col-sm-2 control-label">Contact Tel.</label>
-                        <div class="col-xs-5 col-sm-2">
-                            <div class="input-group">
-                                <div class="input-group-addon">(</div>
-                                    <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
-                                <div class="input-group-addon">)</div>
-                            </div>
-                        </div>
-                        <div class="col-xs-7 col-sm-3">
-                                    <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="emailid" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-5">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                       <div class="checkbox col-sm-2 col-sm-offset-2">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" name="approve" value="">
-                                <strong>May we contact you?</strong>
-                            </label>
-                        </div>
-                        <div class="col-sm-2 col-sm-offset-1">
-                            <select class="form-control">
-                                <option>Tel.</option>
-                                <option>Email</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="feedback" class="col-sm-2 control-label">Your Feedback</label>
-                        <div class="col-sm-5">
-                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <input type="submit" name="submit">
-                            	Send Message
-                        </div>
-                    </div>
+                <span style="font:status-bar; font-size:20px; margin-left:43px">Last name</span>
+                <span style="margin-left:53px">
+                    <input type="text" name="lastname" placeholder="Enter Last Name">
+                </span><br><br>
 
-                </form>
+                <span style="font:status-bar; font-size:20px; margin-left:79px">E-mail</span>
+                <span style="margin-left:54px">
+                    <input type="text" name="email" placeholder="Enter Your E-mail">
+                </span><br><br>
 
+                <span style="font:status-bar; font-size:20px;">Phone Number</span>
+                <span style="margin-left:50px">
+                    <input type="text" name="phone" placeholder="Enter Phone Number">
+                </span><br><br>
+
+                <div style="font:status-bar; font-size:20px;">
+                    <input type="checkbox" name="approve" value="1">May I contact you?
+                    <span style="margin-left:180px">
+                        <select name="option">
+                            <option value="1">Tel.</option>
+                            <option value="2">Email</option>
+                        </select>
+                    </span>
+                </div>
+                <br>
+                <textarea form="response" name="comment" rows="15" cols="58">
+
+                </textarea><br><br>
+
+                <button type="submit" name="submit" value="Send" style="margin-left:325px; width:100px">
+                    <span style="font:status-bar; font-size:20px">Send</span>
+                </button> 
+          </form> 
+      </div>
+<div class="footer" style="margin-top:50px">        
+    <div class="footer_address">
+        <span style="font:Times New Roman">
+            <h3>My Address</h3><br>
+		      Xinke Shidai, 1010 Nanhe Road<br>
+		      Chengguan District, Lanzhou 730010<br>
+		      Gansu, China<br>
+        </span>
+    </div>
+
+    <div class="footer_contact">
+        <span style="font:Times New Roman">
+            <h3>My Contact</h3><br>
+		  <img src="img/phone.png">:(+86)13672001933<br>
+		  <img src="img/mail.png">:lidanni1993@yeah.net
+        </span>
+    </div>
                 
-
-            </div>
-             <div class="col-xs-12 col-sm-3">
-                <p style="padding:20px;"></p>
-            </div>
-       </div>
-
-
-	</body>
-
-<footer class="row-footer">
-        <div class="container">
-            <div class="row" style="margin-left:30px">             
-                <!-- <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div> -->
-                <div class="col-xs-12 col-sm-offset-1 col-sm-3">
-                    <h5>My Address</h5>
-		              Xinke Shidai, 1010 Nanhe Road<br>
-		              Chengguan District, Lanzhou 730010<br>
-		              Gansu, China<br>
-                </div>
-                <div class="col-xs-12 col-sm-2">
-                	<h5>My Contact</h5>
-                	<address>
-						<i class="fa fa-phone"></i>: (+86)13672001933<br>
-		              	<i class="fa fa-envelope"></i>: 
-                        <a href="mailto:lidanni1993@yeah.net">lidanni1993@yeah.net</a>
-                    </adress>
-                </div>
-                <div class="col-xs-12 col-sm-4" style="margin-left:20px">
-                	<h5>My Social Account</h5>
-                    <div class="nav navbar-nav" >
-                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                </div>
-            </div>
-                
-            <div class="col-xs-12" style="margin-left:400px">
-                <p >Copyright 2016 Danni Li</p>
-            </div>
-            
+    <div class="footer_social">
+        <span style="font:Times New Roman">
+        <h3>My Social Account</h3><br>
+        </span>
+        <div>
+            <a href="http://google.com/+"> <img src="img/google+.png"></a>
+            <a href="http://www.facebook.com/"><img src="img/facebook.png"></a>
+            <a href="http://www.linkedin.com/"><img src="img/linkedin.png"></a>
+            <a href="http://twitter.com/"><img src="img/twitter.png"></a>
+            <a href="http://youtube.com/"><img src="img/youtube.png"></a>
+            <a href="http://instagram.com/"><img src="img/instagram.png"></a>
         </div>
-    </footer>
-
+    </div>
+                
+    <div style="margin-left:600px; margin-top:170px">
+        <br>
+        <p>&copyCopyright 2016 Danni Li</p>
+    </div>            
+</div>
+</body>
 </html>
