@@ -16,8 +16,8 @@ div.board {
   vertical-align: top;
   
   /* Put some space between boxes */
-  margin-bottom: 10px;
-  margin-top: 15px;
+/*  margin-bottom: 10px;*/
+  margin-top: 0px;
   background: url('../img/board.jpg') center center;
   background-size: cover;
 }
@@ -165,8 +165,72 @@ div.overlay p {
   text-align: center;
 }
 
-.footer{
+.footer {
     background-color: #AfAfAf;
     margin:0px auto;
-    padding: 20px 0px 20px 0px;
+    padding: 5px 0px 0px 0px;
+}
+
+.footer_address {
+  /* Set the size of the box */
+  width: 300px;
+  height: 100px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin-left: 200px;
+  margin-top: 60px;
+}
+
+.footer_contact {
+   /* Set the size of the box */
+  width: 300px;
+  height: 100px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin-left: 70px;
+  margin-top: 60px;
+}
+
+.footer_social {
+   /* Set the size of the box */
+  width: 400px;
+  height: 100px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.horizontalLine ul li {
+  display: inline;
+}
+
+.home {
+  height:35px;
+  background-color: #FFFF99;
+  font-family: "Times New Roman", Times, serif; 
+  font-size: 30px;
+}
+
+.name {
+  margin-left: 200px;
+  margin-top: 50px;
 }
