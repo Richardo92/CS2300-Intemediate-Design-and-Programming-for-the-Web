@@ -92,8 +92,6 @@
                     exit;
                 }
                 $file_pointer = openFile("data.txt", "a+");
-                $tt = strlen($newJob[1]);
-                print("$tt<br>");
                 $newJob[1] = str_pad($newJob[1], 6, '0', STR_PAD_LEFT);
                 $line = implode("\t", $newJob);
                 $line = "\n".$line;
