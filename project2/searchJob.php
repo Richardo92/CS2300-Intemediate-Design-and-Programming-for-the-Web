@@ -63,6 +63,26 @@
 					$jobID = htmlentities($jobID);
 					$jobID = str_pad($jobID, 6, '0', STR_PAD_LEFT);
 					$location = htmlentities($location);
+
+					if (!is_string($jobName) || !preg_match("/[0-9]*/", $jobID) || strlen($jobID) > 6 
+						|| !is_string($location)         ) {
+                   	 	print("<p>Invalid input!</p>");
+                    	exit;
+	                }
+	                if ($jobName != "" && strlen($jobName) > 15) {
+	                    print("<p>Invalid input!</p>");
+	                    exit;
+	                }
+	                if ($jobID != "" && (!preg_match("/^[0-9]*$/", $jobID) || (strlen($jobID) > 6))) {
+	                    print("<p>Invalid input!</p>");
+	                    exit;
+	                }
+	                if ($location != "" && strlen($location) > 30) {
+	                    print("<p>Invalid input!</p>");
+	                    exit;
+	                }
+
+
 					/* search */
 					print("<table border='1' style='width: 55%'>");
 					print("<thead style='height:50px'>");

@@ -71,10 +71,23 @@
                 $jobID = $_POST["jobID"];
                 $location = filter_input(INPUT_POST, 'location', FILTER_SANITIZE_STRING);
                 $salary = filter_input(INPUT_POST, 'salary', FILTER_VALIDATE_INT);
-                if (!is_string($jobName) || !preg_match("/[0-9]*/", $jobID) || strlen($jobID) > 6 || !is_string($location) || !is_numeric($salary)) {
+                if (!is_string($jobName) || !preg_match("/^[0-9]*$/", $jobID) || strlen($jobID) > 6 || !is_string($location) || !is_numeric($salary)) {
                     print("<p>Invalid input!</p>");
                     exit;
                 }
+                if ($jobName === "" || strlen($jobName) > 15) {
+                    print("<p>Invalid input!</p>");
+                    exit;
+                }
+                if ($location === "" || strlen($location) > 30) {
+                    print("<p>Invalid input!</p>");
+                    exit;
+                }
+                if (strlen((string) $salary) > 10) {
+                    print("<p>Invalid input! Get away, cheater. I don't think you have so many money!</p>");
+                    exit;
+                }
+
 
                 $newJob = array($jobName, $jobID, $location, $salary);
                 if ($_POST["link"] != "") {
