@@ -1,0 +1,8 @@
+
+Google	000001	California	150	http://www.google.com
+
+Facebook	000002	California	160	http://www.facebook.com
+
+Linkedln	000003	California	120	http://www.linkedin.com
+
+Yahoo	000016	Atlanta	118	http://www.yahoo.com

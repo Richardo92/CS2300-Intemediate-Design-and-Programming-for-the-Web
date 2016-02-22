@@ -1,0 +1,144 @@
+@import 'master.css';
+
+/******* solution for 1 ***************/
+#p1 {
+	color: #7FFFD4;
+}
+
+
+/******* solution for 2 ***************/
+#p2 {
+  	border-bottom: dashed orange 2px;
+ }
+
+
+
+/******* solution for 3 ***************/
+#p3 {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+
+
+
+
+/******* solution for 4 ***************/
+#p4 {
+	height: 400px;
+	width: 600px;
+	background: url('../img/doge.jpg') center center; /** what does center mean? */
+	background-size: cover; 
+}
+
+
+
+
+
+
+/******* solution for 5 ***************/
+#p5 {
+	height: 400px;
+	width: 400px;
+	background-color: #7fff00;
+
+	/* enter solution here */
+	margin: auto;
+	border: dotted #2F4F4F 5px;
+	border-radius: 200px;
+
+}
+
+/******* solution for 6 ***************/
+#p6 {
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+	background: url('../img/doge-1.jpg');
+	background-size: 200% auto;
+	background-position: 45% 40%;
+	border: solid #FAEBD7 4px;
+}
+
+
+
+
+
+
+
+
+
+/******* solution for 7 ***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* solution for 8 ***************/
+
+
+
+
+
+
+
+
+/******* solution for 9 ***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* solution for 10 ***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

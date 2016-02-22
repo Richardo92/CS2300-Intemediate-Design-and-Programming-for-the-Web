@@ -1,0 +1,6 @@
+
+Amazon	000004	Seattle	110	http://www.amazon.com
+
+Splunk	000009	California	125	http://www.splunk.com
+
+baidu	000389	Beijing	83	http://www.baidu.com

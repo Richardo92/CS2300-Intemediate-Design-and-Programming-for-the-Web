@@ -1,0 +1,77 @@
+/* Make the body element fill the height 
+ * of the window, and no more */
+body, html {
+  margin: 0px;
+  height: 100%;
+}
+
+/* Create a background for the side bar 
+ * on the left */
+body {
+  border-left: 200px rgba(200,200,200,0.5) solid;
+  margin-left: 20px;
+}
+
+/* Position the side bar inside the body's 
+ * left border, with the same width */
+#sidebar {
+  width: 200px;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+/* Remove unnecessary default spacing */
+#sidebar ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Remove the default formatting of list items */
+#sidebar ul li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+/* Format sidebar links as buttons */
+#sidebar ul li a {
+  /* Display the link as a block with 
+   * width and height properties  */
+  display: block;
+  
+  /* Set the width and padding to fill
+   * the sidebar width (200 = 20 + 160 + 20) */
+  width: 160px;
+  padding: 10px 20px;
+  
+  /* Format the text */
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Give the menu list items a hover effect */
+#sidebar ul li:hover {
+  background-color: rgba(200,200,200,1);  
+}
+
+/* Also give the links an effect when
+ * the list items are hovered */
+#sidebar ul li:hover a {
+  border-left: 10px rgba(40,40,240,1) solid;
+  /* subtract border-left from padding-left 
+   * 20px - 10px = 10px */
+  padding-left: 10px; 
+}
+
+/* Put some space between page content and the
+ * sidebar */
+#page-content {  
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+/* Remove unnecessary spacing in the h1 element */
+#page-content h1 {
+  margin: 0px;
+}

@@ -18,7 +18,7 @@ div.board {
   /* Put some space between boxes */
 /*  margin-bottom: 10px;*/
   margin-top: 0px;
-  background: url('../img/board.jpg') center center;
+  background: url('http://weknowyourdreamz.com/images/road/road-08.jpg') center center;
   background-size: cover;
 }
 /* The code for the effect of rollover is cited from the sample css file on piazaa */
@@ -64,7 +64,7 @@ div.resume {
   
   /* Put some space between boxes */
   margin: 20px 30px;
-  background: url('../img/resume.jpg');
+  background: url('http://www.northeastern.edu/careers/blog/wp-content/uploads/2014/10/resume-pic.jpg');
   background-size: 100% auto;
 
   border: solid #FAEBD7 4px;
@@ -93,7 +93,7 @@ div.experience {
   /* Put some space between boxes */
   margin: 10px 30px;
   margin-left: 60px;
-  background: url('../img/experience.jpg');
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/d0/f6/41/d0f641934ec6be5ba622b9d7179dbf35.jpg');
   background-size: 115% auto;
   background-position: 50% 25%;
   border: solid #FAEBD7 4px;
@@ -121,7 +121,7 @@ div.contact {
   /* Put some space between boxes */
   margin: 10px 30px;
 
-  background: url('../img/contact.jpg');
+  background: url('http://www.opiniontracker.net/uploads/pics/contact_us_01.jpg');
   background-size: 115% auto;
   background-position: 50% 25%;
   border: solid #FAEBD7 4px;
@@ -219,10 +219,6 @@ div.overlay p {
   /* Put some space between boxes */
   margin-left: 30px;
   margin-top: 60px;
-}
-
-.horizontalLine ul li {
-  display: inline;
 }
 
 .home {

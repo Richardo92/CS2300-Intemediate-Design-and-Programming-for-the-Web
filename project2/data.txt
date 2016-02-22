@@ -1,0 +1,21 @@
+Google	000001	California	150	http://www.google.com
+Facebook	000002	California	160	http://www.facebook.com
+Linkedln	000003	California	120	http://www.linkedin.com
+Amazon	000004	Seattle	110	http://www.amazon.com
+IBM	000005	New York	115	http://www.ibm.com
+Intel	000006	Atlanta	120	http://www.intel.com
+Cable Vision	000007	New York	90	http://www.cablevision.com
+Arista	000008	California	120	http://www.arista.com
+Splunk	000009	California	125	http://www.splunk.com
+Microsoft	000010	Seattle	130	http://www.microsoft.com
+Apple	000011	California	120	http://www.apple.com
+Datto	000012	Boston	110	http://www.datto.com
+Infinera	000013	California	100	http://www.infinera.com
+DropBox	000014	California	120	http://www.dropbox.com
+Yahoo	000016	Atlanta	118	http://www.yahoo.com
+Bank of American	000017	New York	95	http://www.bankofamerica.com
+Box	000018	Chicago	125	http://www.box.com
+Tecent	000087	Shenzhen	238	http://www.qq.com
+baidu	000389	Beijing	83	http://www.baidu.com
+
+huawei	000987	shenzhen	829	http://www.huawei.com

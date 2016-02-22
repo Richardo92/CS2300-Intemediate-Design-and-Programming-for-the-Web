@@ -1,0 +1,49 @@
+/* Initialize all elements to zero margin and padding 
+ * This makes it easier to calculate our positioning */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Style the link into a button */
+a.button {
+  /* Allow multiple buttons to exist on one line
+   * while also letting us set the margins */
+  display: inline-block;
+  margin: 10px;
+  
+  /* Put space between the button edge and the text */
+  padding: 10px;
+  
+  /* Fill the button space with color */
+  background-color: rgba(0,0,255,1);
+  
+  /* Give the button rounded corners */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  
+  /* Give the button a fake 3D appearance 
+   * by giving it a dark bottom border */
+  border-bottom: 5px rgba(0,0,0,0.5) solid;
+  
+  /* Format the text with color white and no underline */
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+/* On hover, show that button changes */
+a.button:hover {
+  /* Lighten the color to show it can be clicked */
+  background-color: rgba(100,100,240,1);
+}
+
+/* When clicked, push the button down */
+a.button:active {
+  /* Push the button down by 1px more than initial margin-top */
+  margin-top: 11px; 
+  
+  /* Decrease the bottom border by 1px to maintain equal height */
+  border-bottom: 4px rgba(0,0,0,0.5) solid;
+}

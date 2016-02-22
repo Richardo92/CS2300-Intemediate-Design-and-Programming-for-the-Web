@@ -1,0 +1,148 @@
+/* Initialize all elements to zero margin and padding 
+ * This makes it easier to calculate our positioning */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* The box containing the image */
+div.box {
+  /* Set the size of the box */
+  width: 500px;
+  height: 350px;
+  
+  /* For rows of boxes, 
+   * align them by top position on one line */
+  display: inline-block;
+  vertical-align: top;
+  
+  /* Put some space between boxes */
+  margin: 20px 10px;
+}
+
+div.box img {
+  /* Set the img size to match the box */
+  width: 500px;
+  height: 350px;
+}
+
+
+/* ===================================== */
+/* ======== FULL SIZE OVERLAY ========== */
+/* ===================================== */
+div.overlay {
+  /* Position the overlay absolutely in
+   * the top-left corner of the box */
+  position: absolute;
+  
+  /* Set the size to match the box */
+  width: 500px;
+  height: 350px;
+  
+  /* Initially invisible */
+  display: none;
+  visibility: hidden;
+  
+  /* Increase contrast between image and text */
+  background-color: rgba(0,0,0,0.5);
+  
+  /* Format the text */
+  color: rgba(255,255,255,1);
+  font-size: 4em;
+}
+
+/* Center the paragraph in the overlay */
+div.overlay p {
+  margin-top: 25%;
+  text-align: center;
+}
+
+/* Only display overlay when box is hovered */
+div.box:hover div.overlay {
+  /* Set to visible */
+  display: block;
+  visibility: visible;
+}
+
+
+/* ===================================== */
+/* ============ TOP RIBBON ============= */
+/* ===================================== */
+div.top {
+  /* Position the top ribbon absolutely 
+   * in the topleft corner of the box */
+  position: absolute;
+  
+  /* Set the size to match the box width
+   * but set the height much smaller */
+  width: 500px;
+  height: 100px;
+  
+  /* Initially invisible */
+  display: none;
+  visibility: hidden;
+  
+  /* Increase contrast between image and text */
+  background-color: rgba(0,0,0,0.5);
+  
+  /* Format the text */
+  color: rgba(255,255,255,1);
+  font-size: 4em;
+}
+
+/* Put some space between the text and the
+ * edge of the paragraph container */
+div.top p {
+  padding: 10px 20px 10px 20px;
+}
+
+/* Only display ribbon when box is hovered */
+div.box:hover div.top {
+  /* Set to visible */
+  display: block;
+  visibility: visible;
+}
+
+
+/* ===================================== */
+/* =========== BOTTOM RIBBON =========== */
+/* ===================================== */
+div.bottom {
+  /* Position the top ribbon relatively 
+   * by a distance of ribbon's height+padding
+   * away from the bottom of the box
+   * NOTE: the order of the HTML elements is
+   * different for the bottom ribbon than 
+   * for the other two examples */
+  position: relative;
+  bottom: 105px;
+  
+  /* Set the size to match the box width
+   * but set the height much smaller */
+  width: 500px;
+  height: 100px;
+  
+  /* Initially invisible */
+  display: none;
+  visibility: hidden;
+  
+  /* Increase contrast between image and text */
+  background-color: rgba(0,0,0,0.5);
+  
+  /* Format the text */
+  color: rgba(255,255,255,1);
+  font-size: 4em;
+}
+
+/* Put some space between the text and the
+ * edge of the paragraph container */
+div.bottom p {
+  padding: 10px 20px 10px 20px;
+}
+
+/* Only display ribbon when box is hovered */
+div.box:hover div.bottom {
+  /* Set to visible */
+  display: block;
+  visibility: visible;
+}
