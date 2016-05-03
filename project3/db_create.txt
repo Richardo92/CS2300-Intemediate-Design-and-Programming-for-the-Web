@@ -1,0 +1,10 @@
+CREATE TABLE albums
+(
+    aID int NOT NULL,  
+    aName varchar(20) NOT NULL,
+    aDate date NOT NULL,
+    aComment varchar(200),
+    uID int NOT NULL,
+    PRIMARY KEY (aID),
+    FOREIGN KEY (uID) REFERENCES User(uID) ON DELETE SET NULL AND ON UPDATE CASCADE
+);

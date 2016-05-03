@@ -1,0 +1,64 @@
+/* Make the body element fill the height 
+ * of the window, and no more */
+body, html {
+  margin: 0px;
+  height: 100%;
+  padding-left: 5px;
+  background-color: LIGHTBLUE;
+}
+
+
+.nav ul {
+  width: 130%;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 0px; 
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.nav ul li a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  padding: 10px;
+  color: rgba(0,0,0,0.7);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+}
+
+.nav ul li:hover{
+  background-color: rgba(200,200,200,0.5);
+}
+
+.nav ul li:hover a {
+  border-bottom: 10px rgba(40,40,240,1) solid;
+  padding-bottom: 0px;
+  color: rgba(0,0,0,1);
+}
+
+.photo {
+  width:600px;
+}
+
+.login {
+  height: 35px;
+  width: 230px;
+}
+
+
+.photo {
+  width: 200px;
+}
+
+.singlePhoto {
+  width: 90%;
+  padding-left: 60px;
+}
